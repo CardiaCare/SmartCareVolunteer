@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cardiacare.help.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Иммобилизация переломов"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/section_label"
+        android:weightSum="1"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Обеспечить покой конечности путем наложения шины, соблюдая принцип обездвиживания трех суставов"
+            android:id="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="58dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/section_label"
+            android:shrinkColumns="0, true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="268dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/s3"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_weight="1.80" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

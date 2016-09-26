@@ -1,0 +1,57 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/enter_name"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView android:id="@+id/etFirstName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/FirstName"
+                    android:inputType="textPersonName" android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/etSecondName" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="@string/SecondName"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/sign"
+                    android:imeOptions="actionUnspecified" android:inputType="textPersonName"
+                    android:maxLines="1" android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:id="@+id/nextButton" style="?android:textAppearanceSmall"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:text="Next"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
